@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>DZ FOR savings - إدارة مصاريفك وادخارك</title>
 
-    <meta name="description" content="DZ FOR savings - تطبيق يساعدك على إدارة مصاريفك وتنظيم ميزانيتك ومتابعة مدخراتك بسهولة.">
+    <meta name="description"
+        content="DZ FOR savings - تطبيق يساعدك على إدارة مصاريفك وتنظيم ميزانيتك ومتابعة مدخراتك بسهولة.">
 
-    <meta name="keywords" content="DZ FOR savings, إدارة المصاريف, الادخار, الميزانية, تطبيق مصاريف">
+    <meta name="keywords"
+        content="DZ FOR savings, إدارة المصاريف, الادخار, الميزانية, تطبيق مصاريف">
+
+    <!-- أيقونة الموقع -->
+    <link rel="icon" type="image/png" href="logo.png">
 
     <style>
+
         * {
             margin: 0;
             padding: 0;
@@ -24,14 +33,19 @@
             line-height: 1.7;
         }
 
-        /* الهيدر */
+        /* =========================
+           الهيدر
+        ========================= */
+
         header {
             background: linear-gradient(135deg, #087f5b, #12b886);
             color: white;
             padding: 22px 8%;
+
             display: flex;
             justify-content: space-between;
             align-items: center;
+
             box-shadow: 0 3px 15px rgba(0,0,0,0.15);
         }
 
@@ -51,13 +65,20 @@
             text-decoration: underline;
         }
 
-        /* القسم الرئيسي */
+
+        /* =========================
+           الصفحة الرئيسية
+        ========================= */
+
         .hero {
             min-height: 600px;
+
             display: flex;
             align-items: center;
             justify-content: center;
+
             text-align: center;
+
             padding: 60px 20px;
         }
 
@@ -80,21 +101,34 @@
         .hero p {
             font-size: 20px;
             color: #555;
+
             max-width: 700px;
+
             margin: 0 auto 35px;
         }
 
-        /* زر التحميل */
+
+        /* =========================
+           زر التحميل
+        ========================= */
+
         .download-btn {
             display: inline-block;
+
             background: #087f5b;
             color: white;
+
             padding: 16px 35px;
+
             border-radius: 12px;
+
             text-decoration: none;
+
             font-size: 20px;
             font-weight: bold;
+
             box-shadow: 0 6px 15px rgba(0,0,0,0.18);
+
             transition: 0.3s;
         }
 
@@ -103,7 +137,11 @@
             transform: translateY(-3px);
         }
 
-        /* المميزات */
+
+        /* =========================
+           المميزات
+        ========================= */
+
         .features {
             padding: 70px 8%;
             background: white;
@@ -111,25 +149,37 @@
 
         .section-title {
             text-align: center;
+
             font-size: 34px;
+
             color: #087f5b;
+
             margin-bottom: 45px;
         }
 
         .features-grid {
             display: grid;
+
             grid-template-columns: repeat(3, 1fr);
+
             gap: 25px;
+
             max-width: 1100px;
+
             margin: auto;
         }
 
         .feature {
             background: #f4f8f5;
+
             padding: 35px 25px;
+
             border-radius: 18px;
+
             text-align: center;
+
             box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+
             transition: 0.3s;
         }
 
@@ -139,61 +189,87 @@
 
         .feature-icon {
             font-size: 45px;
+
             margin-bottom: 15px;
         }
 
         .feature h3 {
             color: #087f5b;
+
             font-size: 23px;
+
             margin-bottom: 12px;
         }
 
         .feature p {
             color: #555;
+
             font-size: 16px;
         }
 
-        /* لماذا التطبيق */
+
+        /* =========================
+           عن التطبيق
+        ========================= */
+
         .about {
             padding: 70px 8%;
+
             text-align: center;
         }
 
         .about-box {
             max-width: 900px;
+
             margin: auto;
+
             background: white;
+
             padding: 40px;
+
             border-radius: 20px;
+
             box-shadow: 0 5px 20px rgba(0,0,0,0.08);
         }
 
         .about-box p {
             font-size: 18px;
+
             color: #444;
+
             margin-bottom: 15px;
         }
 
-        /* دعوة التحميل */
+
+        /* =========================
+           قسم التحميل
+        ========================= */
+
         .download-section {
             background: linear-gradient(135deg, #087f5b, #12b886);
+
             color: white;
+
             text-align: center;
+
             padding: 70px 20px;
         }
 
         .download-section h2 {
             font-size: 35px;
+
             margin-bottom: 15px;
         }
 
         .download-section p {
             font-size: 18px;
+
             margin-bottom: 30px;
         }
 
         .download-section .download-btn {
             background: white;
+
             color: #087f5b;
         }
 
@@ -201,11 +277,18 @@
             background: #f0f0f0;
         }
 
-        /* الفوتر */
+
+        /* =========================
+           الفوتر
+        ========================= */
+
         footer {
             background: #12352c;
+
             color: white;
+
             text-align: center;
+
             padding: 25px;
         }
 
@@ -213,12 +296,18 @@
             margin: 5px 0;
         }
 
-        /* الهاتف */
+
+        /* =========================
+           الهاتف
+        ========================= */
+
         @media (max-width: 800px) {
 
             header {
                 flex-direction: column;
+
                 gap: 12px;
+
                 text-align: center;
             }
 
@@ -249,13 +338,21 @@
             .about-box {
                 padding: 25px;
             }
+
         }
+
     </style>
+
 </head>
+
 
 <body>
 
-    <!-- الهيدر -->
+
+    <!-- =========================
+         الهيدر
+    ========================= -->
+
     <header>
 
         <div class="logo">
@@ -263,23 +360,44 @@
         </div>
 
         <nav>
-            <a href="#home">الرئيسية</a>
-            <a href="#features">المميزات</a>
-            <a href="#about">عن التطبيق</a>
-            <a href="#download">تحميل</a>
+
+            <a href="#home">
+                الرئيسية
+            </a>
+
+            <a href="#features">
+                المميزات
+            </a>
+
+            <a href="#about">
+                عن التطبيق
+            </a>
+
+            <a href="#download">
+                تحميل
+            </a>
+
         </nav>
 
     </header>
 
 
-    <!-- الصفحة الرئيسية -->
+
+    <!-- =========================
+         الصفحة الرئيسية
+    ========================= -->
+
     <section class="hero" id="home">
 
         <div class="hero-content">
 
-            <h1>DZ FOR savings</h1>
+            <h1>
+                DZ FOR savings
+            </h1>
 
-            <h2>إدارة مصاريفك أصبحت أسهل 💰</h2>
+            <h2>
+                إدارة مصاريفك أصبحت أسهل 💰
+            </h2>
 
             <p>
                 تطبيق DZ FOR savings يساعدك على تنظيم مصاريفك،
@@ -287,11 +405,16 @@
                 وسهلة الاستخدام.
             </p>
 
+
+            <!-- زر التحميل -->
+
             <a
                 href="https://github.com/abdelilahhalloufi19-lgtm/dz_for_savigs/releases/download/v1.0.0/dz-for-savings.zip"
                 class="download-btn"
             >
+
                 📥 تحميل التطبيق
+
             </a>
 
         </div>
@@ -299,14 +422,22 @@
     </section>
 
 
-    <!-- المميزات -->
+
+    <!-- =========================
+         المميزات
+    ========================= -->
+
     <section class="features" id="features">
 
         <h2 class="section-title">
             ⭐ مميزات التطبيق
         </h2>
 
+
         <div class="features-grid">
+
+
+            <!-- الميزة الأولى -->
 
             <div class="feature">
 
@@ -325,6 +456,9 @@
             </div>
 
 
+
+            <!-- الميزة الثانية -->
+
             <div class="feature">
 
                 <div class="feature-icon">
@@ -342,6 +476,9 @@
             </div>
 
 
+
+            <!-- الميزة الثالثة -->
+
             <div class="feature">
 
                 <div class="feature-icon">
@@ -358,17 +495,23 @@
 
             </div>
 
+
         </div>
 
     </section>
 
 
-    <!-- عن التطبيق -->
+
+    <!-- =========================
+         عن التطبيق
+    ========================= -->
+
     <section class="about" id="about">
 
         <h2 class="section-title">
             💡 لماذا DZ FOR savings؟
         </h2>
+
 
         <div class="about-box">
 
@@ -392,7 +535,11 @@
     </section>
 
 
-    <!-- قسم التحميل -->
+
+    <!-- =========================
+         قسم التحميل
+    ========================= -->
+
     <section class="download-section" id="download">
 
         <h2>
@@ -403,17 +550,24 @@
             حمّل التطبيق وابدأ في تنظيم مصاريفك اليوم.
         </p>
 
+
         <a
             href="https://github.com/abdelilahhalloufi19-lgtm/dz_for_savigs/releases/download/v1.0.0/dz-for-savings.zip"
             class="download-btn"
         >
+
             📥 تحميل DZ FOR savings
+
         </a>
 
     </section>
 
 
-    <!-- الفوتر -->
+
+    <!-- =========================
+         الفوتر
+    ========================= -->
+
     <footer>
 
         <p>
@@ -426,5 +580,7 @@
 
     </footer>
 
+
 </body>
+
 </html>
